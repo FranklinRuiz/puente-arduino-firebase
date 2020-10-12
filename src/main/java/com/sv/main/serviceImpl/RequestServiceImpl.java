@@ -19,7 +19,7 @@ public class RequestServiceImpl implements IRequestService {
 
 		String json = "{\"tipo\":" + tipo + ",\"valor\":" + valor + "}";
 
-		http.runShellCommand("https://utp-distribuido.firebaseio.com/sensor.json", json);
+		http.runShellCommand("url-firebase", json);
 
 		return 1;
 	}
